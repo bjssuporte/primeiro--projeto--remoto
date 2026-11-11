@@ -8,7 +8,8 @@ import {
   IonCardContent,
   IonCardHeader,
   IonCardSubtitle,
-  IonCardTitle
+  IonCardTitle,
+  IonAvatar,
 } from '@ionic/react';
 
 import ExploreContainer from '../components/ExploreContainer';
@@ -23,16 +24,19 @@ const Tab1: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
+        <IonHeader className='cabecalho' collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
+            <IonTitle size="large">Apresentação</IonTitle>
           </IonToolbar>
+          <IonAvatar>
+            <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+          </IonAvatar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+        {/* <ExploreContainer name="Tab 1 page" /> */}
 
         <IonCard>
           <IonCardHeader>
-            <IonCardTitle>Titulo do cartão</IonCardTitle>
+            <IonCardTitle className='titulo'>Titulo do cartão</IonCardTitle>
             <IonCardSubtitle>Subtitulo do cartão</IonCardSubtitle>
           </IonCardHeader>
 
